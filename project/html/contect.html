@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manganresto - Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script href="../js/contect.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #1e1e2f, #000);
+      color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 60px;
+    }
+
+    .logo {
+      color: #f9b208;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 40px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      position: relative;
+    }
+
+    nav ul li a.active::after,
+    nav ul li a:hover::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background: #f9b208;
+      bottom: -6px;
+      left: 0;
+    }
+
+    .contact-section {
+      padding: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .contact-section h1 {
+      font-size: 48px;
+      color: #f9b208;
+      margin-bottom: 30px;
+    }
+
+    .contact-form {
+      background: #2c2c3e;
+      padding: 40px;
+      border-radius: 15px;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    }
+
+    .contact-form label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 8px;
+      margin-top: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background: #1e1e2f;
+      color: #fff;
+      font-size: 16px;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .contact-form button {
+      margin-top: 20px;
+      padding: 12px 30px;
+      background: #f9b208;
+      color: #000;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background: #e09b00;
+    }
+
+    .contact-info {
+      margin-top: 40px;
+      text-align: center;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Manganresto</div>
+    <nav>
+      <ul>
+        <li><a href="../html/index.html">Home</a></li>
+        <li><a href="../html/manu.html">Menu</a></li>
+        <li><a href="../html/abut.html">About</a></li>
+        <li><a href="../html/location.html">Location</a></li>
+        <li><a href="#" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact-section">
+    <h1>Contact Us</h1>
+    <form class="contact-form" id="contactForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <p>Email: support@manganresto.com</p>
+      <p>Phone: +1 (234) 567-890</p>
+      <p>Address: 123 Flavor Street, Foodville</p>
+    </div>
+  </section>
+
+ 
+</body>
+</html>
